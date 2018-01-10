@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="165dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="24dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144">
+
+        <EditText
+            android:id="@+id/teamNameA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Team A" />
+
+        <EditText
+            android:id="@+id/numPtsA"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/pt3ButtonA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 PTS"
+            android:onClick="teamA3PtButton"/>
+
+        <Button
+            android:id="@+id/pt2ButtonA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 PTS"
+            android:onClick="teamA2PtButton"/>
+
+        <Button
+            android:id="@+id/FTButtonA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Free Throw"
+            android:onClick="teamAFreeThrowButton"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="165dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144">
+
+        <EditText
+            android:id="@+id/teamNameB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Team B" />
+
+        <EditText
+            android:id="@+id/numPtsB"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/pt3ButtonB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+3 PTS"
+            android:onClick="teamB3PtButton"/>
+
+        <Button
+            android:id="@+id/pt2ButtonB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+2 PTS"
+            android:onClick="teamB2PtButton"/>
+
+        <Button
+            android:id="@+id/FTButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FREE THROW"
+            android:onClick="teamBFreeThrowButton"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/resetButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="resetButton" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,4 @@
+#Fri Jan 05 13:09:21 EST 2018
+base.0=/Users/carolinewester/AndroidStudioProjects/CourtCounter/app/build/intermediates/transforms/dexMerger/androidTest/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
